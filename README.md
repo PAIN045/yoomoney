@@ -7,7 +7,7 @@ Class for working with Yoomoney payment forms
 
 $yoomoney = new Yoomoney($your_receiver,$your_secret_key);
 
-
+	<?php
         $formValue = $yoomoney->form($amount,$sum);
         
         
@@ -19,9 +19,11 @@ $yoomoney = new Yoomoney($your_receiver,$your_secret_key);
 									echo '<button>Pay</button>
                                     </form>';
                                     
-                                    
+           ?>                         
                                     
 ### check payments
-
+		<?php
+		
                 if(!$yoomoney->sign($_POST)) exit;
                 
+		?>
