@@ -8,7 +8,7 @@ Class for working with Yoomoney payment forms
 $yoomoney = new Yoomoney($your_receiver,$your_secret_key);
 
 	<?php
-        $formValue = $yoomoney->form($amount,$sum);
+        $formValue = $yoomoney->form($amount,$label);
         
         
 
